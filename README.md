@@ -17,10 +17,11 @@ go to localhost:3737 in browser and login with rstudio (username) and rstudio1 (
 
 
 In Rstudio script
-
+```
 setRepositories(ind=1:2)
 BiocManager::install("MOFA2")
 
 library(Seurat)
 library(ggplot2)
 library(MOFA2)
+```
