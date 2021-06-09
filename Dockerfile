@@ -25,14 +25,16 @@ RUN chmod +x /*.sh
 
 RUN /bootstrap.sh
 RUN /mofa2.sh
-RUN /scRNA-python.sh
-
-
 # jupyter 
 RUN /jupyter.sh 
 
+RUN /scRNA-python.sh
 
-EXPOSE 8787 8888
+EXPOSE 8787
+EXPOSE 8888
 
+# http://127.0.0.1:8888/rstudio/lab
+#CMD ["jupyter lab --notebook-dir=/home/rstudio --ip=0.0.0.0 --no-browser --allow-root --port=8888 --NotebookApp.token='' --NotebookApp.password='' --NotebookApp.allow_origin='*' --NotebookApp.base_url=rstudio"]
+#RUN echo ""
 CMD ["/init"]
 

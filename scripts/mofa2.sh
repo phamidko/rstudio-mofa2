@@ -15,11 +15,9 @@ python3 -m pip install 'https://github.com/bioFAM/mofapy2/tarball/master'
 # export RENV_PATHS_CACHE_CONTAINER=/renv/cache
 # export RENV_PATHS_CACHE=/renv/cache
 
-export RENV_VERSION=0.13.2
-R -e "install.packages('remotes', repos = c(CRAN = 'https://cloud.r-project.org'))"
-R -e "remotes::install_github('rstudio/renv@${RENV_VERSION}')"
+# export RENV_VERSION=0.13.2
+# # export BIOCONDUCTOR_VERSION=3.12
+# R -e "install.packages('remotes', repos = c(CRAN = 'https://cloud.r-project.org'))"
+# R -e "remotes::install_github('rstudio/renv@${RENV_VERSION}')"
 
-R -e "\
-  if (!requireNamespace('BiocManager', quietly = TRUE)) install.packages('BiocManager', repos = 'https://cran.r-project.org'); \
-  sapply(c('GenomeInfoDbData','GO.db','TFBSTools','Rsamtools','rhdf5', 'dplyr', 'tidyr', 'reshape2', 'pheatmap', 'corrplot', 'ggplot2', 'ggbeeswarm', 'scales', 'GGally', 'doParallel', 'RColorBrewer','cowplot', 'ggrepel', 'foreach', 'reticulate', 'HDF5Array', 'DelayedArray','ggpubr', 'forcats', 'Rtsne', 'uwot','systemfonts', 'ragg', 'Cairo', 'ggrastr', 'basilisk', 'mvtnorm'),BiocManager::install); \
-  install.packages(c('devtools', 'testthat', 'roxygen2','Seurat','Signac'), repos = 'https://cran.r-project.org'); "
+R -f /install_package.R
