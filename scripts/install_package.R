@@ -6,5 +6,5 @@ BiocManager::install(version="3.12", update=TRUE, ask=FALSE)
 
 BiocManager::install('devtools')
 
-sapply(c('BiocStyle','GenomeInfoDbData','GO.db','TFBSTools','Rsamtools','rhdf5', 'dplyr', 'tidyr', 'reshape2', 'pheatmap', 'corrplot', 'ggplot2', 'ggbeeswarm', 'scales', 'GGally', 'doParallel', 'RColorBrewer','cowplot', 'ggrepel', 'foreach', 'reticulate', 'HDF5Array', 'DelayedArray','ggpubr', 'forcats', 'Rtsne', 'uwot','systemfonts', 'ragg', 'Cairo', 'ggrastr', 'basilisk', 'mvtnorm'),BiocManager::install)
-install.packages(c('hdf5r','rmarkdown', 'testthat', 'roxygen2','Seurat','Signac'), repos = 'https://cran.r-project.org')
+sapply(c('BiocStyle','GenomeInfoDbData','GO.db','TFBSTools','Rsamtools','rhdf5', 'dplyr', 'tidyr', 'reshape2', 'pheatmap', 'corrplot', 'ggplot2', 'ggbeeswarm', 'scales', 'GGally', 'doParallel', 'RColorBrewer','cowplot', 'ggrepel', 'foreach', 'reticulate', 'HDF5Array', 'DelayedArray','ggpubr', 'forcats', 'Rtsne', 'uwot','systemfonts', 'ragg', 'Cairo', 'ggrastr', 'basilisk', 'mvtnorm', 'MOFA2'),BiocManager::install)
+install.packages(c('msigdbr', 'psych','hdf5r','rmarkdown', 'testthat', 'roxygen2','Seurat','Signac'), repos = 'https://cran.r-project.org')

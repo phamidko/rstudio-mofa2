@@ -20,4 +20,5 @@ python3 -m pip install 'https://github.com/bioFAM/mofapy2/tarball/master'
 # R -e "install.packages('remotes', repos = c(CRAN = 'https://cloud.r-project.org'))"
 # R -e "remotes::install_github('rstudio/renv@${RENV_VERSION}')"
 
+# install all necessary packages
 R -f /install_package.R

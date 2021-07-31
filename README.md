@@ -23,7 +23,9 @@ go to localhost:3787 in browser and login with rstudio (username) and rstudio1 (
 In Rstudio script
 ```
 setRepositories(ind=1:2)
-BiocManager::install("MOFA2")
+#BiocManager::install("MOFA2") # already included in image
+sapply(c('BSgenome.Hsapiens.UCSC.hg38'),BiocManager::install)
+install.packages(c('msigdbr','psych'))
 
 library(Seurat)
 library(ggplot2)
