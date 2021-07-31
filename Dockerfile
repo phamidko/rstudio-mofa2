@@ -33,6 +33,7 @@ RUN /scRNA-python.sh
 EXPOSE 8787
 EXPOSE 8888
 
+# tag jupyter image 
 # http://127.0.0.1:8888/rstudio/lab
 #CMD ["jupyter lab --notebook-dir=/home/rstudio --ip=0.0.0.0 --no-browser --allow-root --port=8888 --NotebookApp.token='' --NotebookApp.password='' --NotebookApp.allow_origin='*' --NotebookApp.base_url=rstudio"]
 #RUN echo ""
