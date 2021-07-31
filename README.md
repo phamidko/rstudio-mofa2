@@ -17,7 +17,7 @@ docker run  --rm -v ${PWD}:/data -d -p 3787:8787 -p 8888:8888 -e PASSWORD=rstudi
 You can access to data and files from host to the docker.
 Windows User must run this command line in Powershell command. 
 
-go to localhost:3737 in browser and login with rstudio (username) and rstudio1 (password from command argument)
+go to localhost:3787 in browser and login with rstudio (username) and rstudio1 (password from command argument)
 
 
 In Rstudio script
