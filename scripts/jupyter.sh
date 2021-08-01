@@ -3,6 +3,10 @@ set -e
 
 echo "Jupyter Script ......................................................................."
 
+apt-get update && apt-get install -f && apt-get install -y python3 python3-setuptools python3-dev python3-pip
+apt-get install -y libcurl4-openssl-dev libssh2-1-dev libxml2-dev zlib1g-dev
+apt-get install -y libcairo2-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev libxt-dev libharfbuzz-dev libfribidi-dev
+
 # Using Debian, as root
 curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
 apt-get install -y nodejs \
