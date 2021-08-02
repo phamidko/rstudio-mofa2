@@ -34,6 +34,24 @@ library(ggplot2)
 library(MOFA2)
 ```
 
+## List all R packages installed in the image
+
+List R packages (Console R prompt)
+```
+ip = as.data.frame(installed.packages()[,c(1,3:4)])
+ip = ip[is.na(ip$Priority),1:2,drop=FALSE]
+ip
+```
+
+Check mofapy2 version (Terminal command prompt)
+```
+pip show mofapy2
+```
+
+
+
+
+
 ## Root user
 Enter root user passoword from command argument which is rstudio1
 
