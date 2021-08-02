@@ -12,9 +12,9 @@ From your host data directory,
 docker run  --rm -v ${PWD}:/data -d -p 3787:8787 -p 8888:8888 -e PASSWORD=rstudio1 --name rstudio phamiducla/rstudio:latest
 
 ```
-You can access to data and files from host to the docker. Windows User must run this command line in Powershell command. 
+The command mounts the current directory to the container [/data]. Windows User must run this command line in Powershell command. 
 
-For Linux user, clone this repository and build docker image. It prevents file premission issue when you attempt to save the files inside container or rstudio. 
+For Linux user, clone this repository and build docker image. It prevents file premission issue when you attempt to save files inside container or rstudio. 
 ```
 docker build --pull --no-cache -t <INSERT_IMAGE_TAG> \
   --build-arg USER_ID=$(id -u) --build-arg GROUP_ID=$(id -g) .
