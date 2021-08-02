@@ -4,12 +4,12 @@ Multi-Omics Factor Analysis V2 (MOFA+) https://biofam.github.io/MOFA2/index.html
 
 Docker image
 ```
-docker pull phamiducla/rstudio:latest
+docker pull phamiducla/rstudio_mofa2:latest
 
 ```
 From your host data directory, 
 ```
-docker run  --rm -v ${PWD}:/data -d -p 3787:8787 -p 8888:8888 -e PASSWORD=rstudio1 --name rstudio phamiducla/rstudio:latest
+docker run  --rm -v ${PWD}:/data -d -p 3787:8787 -p 8888:8888 -e PASSWORD=rstudio1 --name rstudio phamiducla/rstudio_mofa2:latest
 
 ```
 The command mounts the current directory to the container [/data]. Windows User must run this command line in Powershell command. 
