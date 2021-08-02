@@ -21,7 +21,8 @@ docker build --pull --no-cache -t <INSERT_IMAGE_TAG> \
 
 ```
 ## Rstudio Login
-go to localhost:3787 in browser and login with rstudio (username) and rstudio1 (password from command argument)
+
+Go to localhost:3787 in browser and login with rstudio (username) and rstudio1 (password from command argument)
 
 
 In Rstudio script
@@ -33,6 +34,8 @@ library(Seurat)
 library(ggplot2)
 library(MOFA2)
 ```
+
+![Alt text](doc/rstudio_mofa2.jpg?raw=true "Optional Title")
 
 ## List all R packages installed in the image
 
