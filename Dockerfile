@@ -26,7 +26,7 @@ ADD scripts /
 RUN chmod +x /*.sh
 
 RUN /bootstrap.sh
-# jupyter 
+# python, jupyter 
 RUN /jupyter.sh 
 RUN /scRNA-python.sh
 
